@@ -14,9 +14,9 @@ function App() {
             <NavBar />
             <Container>
                 <Routes>
-                    <Route path="/" element={<WorldMap />} />
-                    <Route path="/cn" element={<CNMap />} />
-                    <Route path="/us" element={<USMap />} />
+                    <Route path="/:lang?" element={<WorldMap />} />
+                    <Route path="/:lang?/cn" element={<CNMap />} />
+                    <Route path="/:lang?/us" element={<USMap />} />
                 </Routes>
             </Container>
         </BrowserRouter>
